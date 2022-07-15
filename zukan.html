@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zukan</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <style>
+         body{
+            margin: 0;
+            background-image: url("images/img10.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .zukan {
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color:rgba(233, 241, 255, 0.7);
+            text-align: center;
+            border: 1px solid rgb(30, 10, 49);
+            
+        }
+
+        .zukan h1 {
+            color: rgb(16, 16, 190);
+            margin: 0;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        .zukan p {
+            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .zukan1 {
+            width: 80%;
+            margin: auto;
+            background-color:rgba(233, 241, 255, 0.7);
+            text-align: center;
+            border: 1px solid rgb(30, 10, 49);
+        }
+
+        .zukan1 img{
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .page {
+            width: 250px;
+            text-align: center;
+            margin: 8px;
+            margin-top: 40px;
+            /* margin-bottom: 50px; */
+            /* background-color: antiquewhite; */
+        }
+
+        .card {
+            width: 70%;
+            padding: 5%;
+            margin: auto;
+            border: 1px solid rgb(30, 10, 49);
+        }
+
+        h2 {
+            color: rgb(16, 16, 190);
+        }
+        
+        p {
+            font-weight: bold;
+        }
+
+        .card1 {
+            background-color: rgba(233, 241, 255, 0.7);
+        }
+
+        .card2 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card3 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card4 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card5 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card6 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card7 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card8 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card9 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .card10 {
+            background-color: rgba(233, 241, 255, 0.7);
+            display: none;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 10px;
+            width: 50%;
+            border: 1px solid rgb(30, 10, 49);
+            /* margin: 20px; */
+            background-color: rgba(233, 241, 255, 0.7);
+            color: black;
+            box-sizing: border-box;
+        }
+
+        .btns {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+        }
+
+        .btns a {
+            color: rgb(16, 16, 190);
+           /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+           font-weight: bold;
+        }
+
+        .home {
+            font-size: 20px;
+            font-family: serif;
+            text-align: center;
+            margin-top: 40px;
+            background-color:rgba(233, 241, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+    
+
+
+        @media screen and (min-width: 768px) {
+            .mobile{
+                display:none;
+            }
+            
+            header img{
+                height: 100px;
+            }
+            
+            header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            }
+
+            .carousel {
+            margin-top: 40px;
+            }
+
+            .card {
+            width: 30%;
+            padding: 5%;
+            margin: auto;
+            height: 300px;
+            background-color: rgba(233, 241, 255, 0);
+            }
+
+            .btn {
+            width: 33.3%;
+            background-color: rgba(233, 241, 255, 0);
+            }
+
+            .btns {
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            margin: auto;
+            margin-top: 0%;
+            }
+
+            .zukan2 {
+                display: flex;
+                width: 80%;
+                margin: auto;
+                background-color: rgba(233, 241, 255, 0.7);
+                border: 1px solid rgb(30, 10, 49);
+            }
+
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="zukan">
+        <h1>超次元戦士 バーチャリガー</h1>
+        <p>メタバース空間で悪と戦う<br class="mobile">
+        ヒーローだ！</p>
+    </div>
+    <div class="zukan1">  
+        <img src="images/img12.png">
+    </div>
+
+
+    <div class="zukan2">
+    <div class="card card1">
+        <h2>スペック</h2>
+        <p> ■ 身長 : 182cm<br>
+         ■ 体重 : 93kg<br>
+         ■ パンチ力 : 5.5t<br>
+         ■ キック力 : 7.2t<br>
+         ■ ジャンプ力 : 一跳び 23m<br>
+         ■ 走力 : 100mを6.5秒<br>
+         ■ 必殺技  : メタブレイク<br></p>
+        </div>
+    <div class="card card2">
+        <h2>メタ・プレート</h2>
+        <p>胸に装備された装甲パーツで、「メタ粒子」でできている。あらゆる衝撃を吸収し、緩和することができ、変身者へのダメージをなくす。</p>
+    </div>
+    <div class="card card3">
+        <h2>メタ・リアクター</h2>
+        <p>バーチャリガーの動力源を生成している。一定レベルまでエネルギーを貯めることで必殺技「メタブレイク」を放つことができる。</p>   
+    </div>
+    <div class="card card4">
+        <h2>メタ・ライン</h2>
+        <p>「メタ・リアクター」内で増幅するエネルギーを可視化している。エネルギーに満ち溢れているほど、より鮮やかに輝く。</p>   
+    </div>
+    <div class="card card5">
+        <h2>メタ・ドライバー</h2>
+        <p>「バーチャリガー」に変身するためのアイテム。「メタ・ユニット」を読み込みこみ、レバーを下ろすことで変身することができる。</p>   
+    </div>
+    <div class="card card6">
+        <h2>メタ・ポレイン</h2>
+        <p>ひざを守るための防御パーツ。蹴りを放つときには「メタ・リアクター」で生成されたエネルギーが集中し、青いパーツが強く輝く。</p>   
+    </div>
+    <div class="card card7">
+        <h2>メタ・グリーブ</h2>
+        <p>「メタ・アーマー」の一種で、蹴りを放つときの衝撃や相手の攻撃からすね部分を守る。</p>   
+    </div>
+    <div class="card card8">
+        <h2>メタ・スキン</h2>
+        <p>バーチャリガーの全身を覆っているベーススーツ。防御性に優れており刃先や打撃、電流、炎など様々なダメージを軽減することができる。</p>   
+    </div>
+    <div class="card card9">
+        <h2>メタ・ガントレット</h2>
+        <p>「メタ・アーマー」の一種で、前腕部から手の甲までを保護している。これにより、必殺技を放つときの衝撃にも耐えることができる。</p>   
+    </div>
+    <div class="card card10">
+        <h2>メタ・サバトン</h2>
+        <p>「メタ・アーマー」の一種で、足首から下を保護している。クッション性に優れ、肉弾戦を得意とするバーチャリガーの戦闘スタイルをサポートしている。</p>   
+    </div>
+    
+    <div class="btns">
+        <a class="btn btn1">00 スペック</a>
+        <a class="btn btn2">01 メタ・プレート</a>
+        <a class="btn btn3">02 メタ・リアクター</a>
+        <a class="btn btn4">03 メタ・ライン</a>
+        <a class="btn btn5">04 メタ・ドライバー</a>
+        <a class="btn btn6">05 メタ・ポレイン</a>
+        <a class="btn btn7">06 メタ・グリーブ</a>
+        <a class="btn btn8">07 メタ・スキン</a>
+        <a class="btn btn9">08 メタ・ガントレット</a>
+        <a class="btn btn10">09 メタ・サバトン</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".btn1").click(function () {
+            $(".card1").css("display", "block");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn2").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "block");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn3").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "block");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn4").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "block");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn5").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "block");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn6").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "block");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn7").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "block");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn8").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "block");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "none");
+        });
+        $(".btn9").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "block");
+            $(".card10").css("display", "none");
+        });
+        $(".btn10").click(function () {
+            $(".card1").css("display", "none");
+            $(".card2").css("display", "none");
+            $(".card3").css("display", "none");
+            $(".card4").css("display", "none");
+            $(".card5").css("display", "none");
+            $(".card6").css("display", "none");
+            $(".card7").css("display", "none");
+            $(".card8").css("display", "none");
+            $(".card9").css("display", "none");
+            $(".card10").css("display", "block");
+        });
+
+
+    </script>
+    </div>
+
+    <div class="home">
+        <a href="index.html">ホームへ</a>
+    </div>
+    
+
+    
+</body>
+</html>

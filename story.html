@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>virtualiger</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <style>
+       body{
+            margin: 0;
+            background-image: url("images/img10.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .story {
+            width: 80%;
+            margin: auto;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color:rgba(233, 241, 255, 0.7);
+            text-align: center;
+            border: 1px solid rgb(30, 10, 49);
+            
+        }
+
+        .story1 {
+            width: 80%;
+            margin: auto;
+            background-color:rgba(233, 241, 255, 0.7);
+            text-align: center;
+            border: 1px solid rgb(30, 10, 49);
+        }
+
+        .story1 img{
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .carousel {
+            width: 80%;
+            margin: auto;
+            /* background-color: yellow; */
+            margin: auto;
+        }
+        .carousel img{
+            width: 100%;
+        }
+
+        .home {
+            font-size: 20px;
+            font-family: serif;
+            text-align: center;
+            margin-top: 40px;
+            background-color:rgba(233, 241, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+  <div class="story">
+    <h1>ストーリー</h1>
+    <!-- <p>メタバース空間で悪と戦う<br class="mobile">
+    ヒーローだ！</p> -->
+</div>
+<div class="story1">  
+    <!-- 動かす部分 -->
+    <div class="carousel">
+      <div class="slide01"><img src="images/img13.png"></div>
+      <div class="slide02"><img src="images/img14.png"></div>
+      <div class="slide03"><img src="images/img15.png"></div>
+      <div class="slide04"><img src="images/img16.png"></div>
+      <div class="slide05"><img src="images/img17.png"></div>
+      <div class="slide06"><img src="images/img18.png"></div>
+      <div class="slide07"><img src="images/img19.png"></div>
+      <div class="slide08"><img src="images/img20.png"></div>
+      <div class="slide09"><img src="images/img21.png"></div>
+      <div class="slide10"><img src="images/img22.png"></div>
+  </div>
+</div>
+
+<div class="home">
+  <a href="index.html">ホームへ</a>
+</div>
+
+
+        <!-- 動かすための準備（jquery、slickの読み込み） -->   
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+<!-- 動きの設定 -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').slick({
+            // slidesToShow: 1,
+            // autoplay: true,
+            // autoplaySpeed: 2000,
+            // infinite: true,
+            // dots: true,
+            // arrows: true,
+        });
+    });
+  </script>
+</body>
+</html>
