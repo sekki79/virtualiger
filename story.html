@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>virtualiger</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+   
 
     <style>
        body{
@@ -36,6 +35,12 @@
             border: 1px solid rgb(30, 10, 49);
         }
 
+        .story1 video{
+            width: 80%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
         .story1 img{
             width: 80%;
             margin-top: 20px;
@@ -45,11 +50,11 @@
         .carousel {
             width: 80%;
             margin: auto;
-            /* background-color: yellow; */
             margin: auto;
         }
         .carousel img{
             width: 100%;
+            margin-top: 10px;
         }
 
         .home {
@@ -74,6 +79,7 @@
     ヒーローだ！</p> -->
 </div>
 <div class="story1">  
+    <div class="mov1"><video controls src="images/mov2.mp4"></video></div>
     <!-- 動かす部分 -->
     <div class="carousel">
       <div class="slide01"><img src="images/img13.png"></div>
@@ -94,23 +100,7 @@
 </div>
 
 
-        <!-- 動かすための準備（jquery、slickの読み込み） -->   
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
 
-<!-- 動きの設定 -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-        $('.carousel').slick({
-            // slidesToShow: 1,
-            // autoplay: true,
-            // autoplaySpeed: 2000,
-            // infinite: true,
-            // dots: true,
-            // arrows: true,
-        });
-    });
   </script>
 </body>
 </html>
